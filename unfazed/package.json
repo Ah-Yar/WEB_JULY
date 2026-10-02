@@ -1,0 +1,13 @@
+{
+  "name": "unfazed-project",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "setup": "npm --prefix ./unfazed-backend install --no-audit --no-fund && npm --prefix ./unfazed-frontend install --no-audit --no-fund",
+    "dev": "npm run setup && node scripts/dev.js",
+    "dev:backend": "npm --prefix ./unfazed-backend run dev",
+    "dev:frontend": "npm --prefix ./unfazed-frontend run dev",
+    "build": "npm --prefix ./unfazed-frontend run build"
+  }
+}
